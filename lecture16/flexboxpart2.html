@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: black;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: beige;
+            padding: 10px 20px;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        #login1 {
+            padding-right: 20px;
+
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 150px;
+            background-color: rgb(194, 172, 172);
+            padding: 20px;
+            text-align: center;
+            color: black;
+            line-height: 150px;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(194, 172, 172);
+            padding: 20px;
+            flex-wrap: wrap;
+
+        }
+
+        .layout {
+            display: flex;
+         height: 200px;
+            margin-top: 20px;
+        }
+        .sidebar {
+            flex-basis: 25%;
+            background-color: rgb(194, 172, 172);
+            padding: 10px;
+        }
+        main-content {
+            flex-basis: 75%;
+            background-color: rgb(194, 172, 172);
+            padding: 10px;
+        }
+        .loginbox {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(194, 172, 172);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> navigation bar</h2>
+    <div class="navbar">
+        <div>abhay</div>
+        <div class="menu">
+            <div>home</div>
+            <div>about</div>
+            <div>services</div>
+
+        </div>
+
+        <button id="login1">login</button>
+    </div>
+
+    </div>
+    <h2>Product Grid</h2>
+    <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+    </div>
+    </div>
+    <h2>responsive footer</h2>
+    <div class="footer">
+        <div>about us
+        </div>
+        <div>contact</div>
+        <div>services</div>
+    </div>
+    <h2>sidebar and content layout</h2>
+      <div class="layout"> 
+    <div class="sidebar"> sidebar</div>
+    <div class="main-content"> main content</div>
+    </div>
+    <h2>centered login form</h2>
+    <div class="loginbox">
+        <h2>Login</h2>
+        <input type="text" placeholder="username">
+        <input style="margin-left: 10px; margin-right: 10px;" type="password" placeholder="password">
+        <button>login</button>
+    </div>
+</body>
+
+</html>

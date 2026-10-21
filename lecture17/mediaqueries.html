@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 2px;
+}
+  .navbar {
+    background-color: black;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+.inner-navbar {
+    display: flex;
+    gap: 20px;}
+
+    .active{
+        color: white;
+        text-decoration: none;
+       padding: 20px;
+        font: size 1.2em;
+    }
+    .pandit{
+      background-color: chocolate;
+      color: aliceblue;
+         font: size 1.5em;
+         text-decoration: none;
+         font-weight: bolder;
+          padding: 10px 20px;
+         border-radius: 5px;
+
+    }
+   .btn{
+    background-color: chocolate;
+    color: aliceblue;
+         font: size 1.5em;
+         text-decoration: none;
+         font-weight: bolder;
+         padding: 10px 20px;
+         border-radius: 5px;
+   }
+   @media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .inner-navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+        
+    }
+
+    .active {
+        width: 80%;
+        padding: 8px;
+        border-bottom: 1px solid gray;
+    }
+
+    .pandit {
+        margin-bottom: 5px;
+      border-bottom: 1px solid gray;
+     
+      
+    }
+
+    .btn {
+        width: 50%;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+   </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="pandit">abhaysharma</a>
+      <div class="inner-navbar">
+        <a href="#" class="active">home</a>
+        <a href="#"class="active">about</a>
+        <a href="#"class="active">services</a>
+      </div>
+     <a href="#"class="btn"> login</a>
+    </div>
+</body>
+</html>

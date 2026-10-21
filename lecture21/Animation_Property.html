@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation Property</title>
+
+    <style>
+        .screen{
+            width: 90vw;
+            height: 70vw;
+            border: solid red 8px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 6px;
+
+            position: relative;/*bina reletiv ke nahi move nahi hoga */
+
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-direction:reverse;
+            animation-timing-function:linear;
+            animation-delay: 2s;
+            animation-fill-mode:unset;
+        }
+
+        @keyframes move {
+
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 1000px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>animation!!</h1>
+    <div class="screen">
+
+    <div class="box"></div>
+</div>
+</body>
+
+</html>
